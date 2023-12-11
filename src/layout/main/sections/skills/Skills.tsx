@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SectionTitle } from '../../../components/SectionTitle';
+import { SectionTitle } from '../../../../components/SectionTitle';
 import { Skill } from './skill/Skill';
-import { FlexWrapper } from '../../../components/FlexWrapper';
-import { Description } from '../../../components/Description';
+import { FlexWrapper } from '../../../../components/FlexWrapper';
+import { Description } from '../../../../components/Description';
 
 export const Skills = () => {
   return (
@@ -32,7 +32,7 @@ export const Skills = () => {
 
 const StyledSkills = styled.section`
   padding: 50px;
-  background-color: black;
+  background-color: #09e65d;
 `
 const SkillsList = styled.ul`
   display: grid;

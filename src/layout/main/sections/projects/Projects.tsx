@@ -1,11 +1,11 @@
 import React from 'react';
-import { SectionTitle } from '../../../components/SectionTitle';
+import { SectionTitle } from '../../../../components/SectionTitle';
 import styled from 'styled-components';
-import { FlexWrapper } from '../../../components/FlexWrapper';
+import { FlexWrapper } from '../../../../components/FlexWrapper';
 import { Project } from './project/Project';
-import sedonaImg from '../../../assets/images/project-1.jpg';
-import storeImg from '../../../assets/images/project-2.png';
-import keksImg from '../../../assets/images/project-3.png';
+import sedonaImg from '../../../../assets/images/project-1.jpg';
+import storeImg from '../../../../assets/images/project-2.png';
+import keksImg from '../../../../assets/images/project-3.png';
 
 export const Projects = () => {
   return (

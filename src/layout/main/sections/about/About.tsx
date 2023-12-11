@@ -1,9 +1,9 @@
 import React from 'react';
-import photo from '../../../assets/images/photo.jpg'
+import photo from '../../../../assets/images/photo.jpg'
 import styled from 'styled-components';
-import { FlexWrapper } from '../../../components/FlexWrapper';
-import { SectionTitle } from '../../../components/SectionTitle';
-import { Description } from '../../../components/Description';
+import { FlexWrapper } from '../../../../components/FlexWrapper';
+import { SectionTitle } from '../../../../components/SectionTitle';
+import { Description } from '../../../../components/Description';
 
 export const About = () => {
   return (
