@@ -6,9 +6,6 @@ export const Menu = () => {
     <StyledMenu>
       <ul>
         <li>
-          <a href="">Home</a>
-        </li>
-        <li>
           <a href="">About me</a>
         </li>
         <li>

@@ -1,20 +1,22 @@
 import './App.css';
 import styled from 'styled-components';
 import { Header } from './layout/header/Header';
-import { Hero } from './layout/sections/hero/Hero';
 import { About } from './layout/sections/about/About';
 import { Skills } from './layout/sections/skills/Skills';
 import { Projects } from './layout/sections/projects/Projects';
+import { Contacts } from './layout/sections/contacts/Contacts';
+import { Footer } from './layout/sections/footer/Footer';
 
 function App() {
   return (
     <div className="App">
       <Header />
       <MainTitle>Portfolio A Web Developer</MainTitle>
-      <Hero/>
       <About/>
       <Skills/>
       <Projects/>
+      <Contacts/>
+      <Footer/>
     </div>
   );
 }

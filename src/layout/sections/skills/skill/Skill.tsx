@@ -5,7 +5,6 @@ import { Icon } from '../../../../components/icon/Icon';
 type SkillPropsType = {
   iconId: string
   title: string
-  viewBox?: string
 }
 
 export const Skill = (props: SkillPropsType) => {
@@ -17,9 +16,9 @@ export const Skill = (props: SkillPropsType) => {
   );
 };
 const SKillItem = styled.li`
-  background-color: #e2ccd0;
+
 `
 const SKillTitle = styled.h3`
-
+  color: #ffffff;
 `
 
