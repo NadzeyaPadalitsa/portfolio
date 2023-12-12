@@ -2,13 +2,11 @@ import React from 'react';
 import { FlexWrapper } from '../../components/FlexWrapper';
 import styled from 'styled-components';
 import { Icon } from '../../components/icon/Icon';
-import { Logo } from '../../components/logo/Logo';
 
 export const Footer = () => {
   return (
     <StyledFooter>
       <FlexWrapper justify={"space-between"}>
-        <Logo/>
         <AddressList>
           <AddressLink href={"tel:+375298066793"}>+375298066793</AddressLink>
           <AddressLink href={"mailto:nadya-manko@mail.ru"}>nadya-manko@mail.ru</AddressLink>
@@ -38,7 +36,7 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
   padding: 10px;
-  background-color: #0f0d0d;
+  background-color: #080357;
 `
 const AddressList = styled.address`
 

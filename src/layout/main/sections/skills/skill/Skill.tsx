@@ -19,6 +19,6 @@ const SKillItem = styled.li`
 
 `
 const SKillTitle = styled.h3`
-  color: #ffffff;
+  color: #070be7
 `
 

@@ -32,7 +32,7 @@ export const Skills = () => {
 
 const StyledSkills = styled.section`
   padding: 50px;
-  background-color: #09e65d;
+  background-color: #b9f0ce;
 `
 const SkillsList = styled.ul`
   display: grid;

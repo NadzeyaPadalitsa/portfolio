@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
 export const Description = styled.p`
-  color: #e41169;
+  color: #000000;
 `

@@ -22,7 +22,7 @@ export const About = () => {
 
 const StyledAbout = styled.section`
   padding: 50px;
-  background-color: #126de4;
+  background-color: #dde3eb;
 `
 
 const Photo = styled.img`
