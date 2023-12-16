@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SectionTitle } from '../../../../components/SectionTitle';
-import { FlexWrapper } from '../../../../components/FlexWrapper';
-import { Button } from '../../../../components/Button';
+import { SectionTitle } from '../../../components/SectionTitle';
+import { FlexWrapper } from '../../../components/FlexWrapper';
+import { Button } from '../../../components/Button';
 
 export const Contacts = () => {
   return (
-    <StyledContacts>
+    <StyledContacts id="contacts">
       <SectionTitle>Contacts</SectionTitle>
       <FlexWrapper justify={"space-between"}>
         <Text>Want to know more or just chat? You are welcome!</Text>
@@ -32,7 +32,6 @@ export const Contacts = () => {
 
 const StyledContacts = styled.section`
   padding: 50px;
-  background-color: #9de9a3;
 `
 const Text = styled.p`
   vertical-align: center;

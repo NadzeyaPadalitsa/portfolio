@@ -5,17 +5,20 @@ export const Menu = () => {
   return (
     <StyledMenu>
       <ul>
-        <li>
-          <a href="">About me</a>
+      <li>
+          <a href="#hero">Home</a>
         </li>
         <li>
-          <a href="">Skills</a>
+          <a href="#about">About me</a>
         </li>
         <li>
-          <a href="">Projects</a>
+          <a href="#skills">Skills</a>
         </li>
         <li>
-          <a href="">Contacts</a>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contacts">Contacts</a>
         </li>
       </ul>
     </StyledMenu>
@@ -27,4 +30,5 @@ const StyledMenu = styled.nav`
     display: flex;
     gap: 30px;
   }
+
 `

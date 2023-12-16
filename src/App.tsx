@@ -1,13 +1,22 @@
 import './App.css';
 import { Header } from './layout/header/Header';
+import { Hero } from './layout/sections/hero/Hero';
+import { About } from './layout/sections/about/About';
+import { Skills } from './layout/sections/skills/Skills';
+import { Projects } from './layout/sections/projects/Projects';
+import { Contacts } from './layout/sections/contacts/Contacts';
 import { Footer } from './layout/footer/Footer';
-import { Main } from './layout/main/Main';
+
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Main />
+      <Hero/>
+      <About/>
+      <Skills/>
+      <Projects/>
+      <Contacts/>
       <Footer />
     </div>
   );

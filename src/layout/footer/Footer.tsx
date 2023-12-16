@@ -35,14 +35,11 @@ const StyledFooter = styled.footer`
   display:  flex;
   justify-content: space-between;
   padding: 10px;
-  background-color: #080357;
-  color: #ffffff;
 `
 const AddressList = styled.address`
 
 `
 const AddressLink = styled.a`
-  color: #ffffff;
   &:not(:last-child) {
     margin-right: 20px;
   }
@@ -57,5 +54,5 @@ const SocialItem = styled.li`
 const SocialLink = styled.a`
 
 `
-const Copyright = styled.p`
+const Copyright = styled.small`
 `
