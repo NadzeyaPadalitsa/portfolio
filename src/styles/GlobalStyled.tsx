@@ -18,13 +18,15 @@ export const GlobalStyled = createGlobalStyle`
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: ${theme.colors.secondaryBg};
-  color: ${theme.colors.primaryText};
+  color: ${theme.colors.font};
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
   }
 
   a {
     text-decoration: none;
-    color: ${theme.colors.secondaryText};
+    color: ${theme.colors.accent};
   }
 
   ul {
@@ -32,4 +34,21 @@ export const GlobalStyled = createGlobalStyle`
     padding: 0;
     list-style-type: none;
   }
+
+  section {
+    padding: 100px 0;
+  }
+
+  section:nth-of-type(odd) {
+    background-color: ${theme.colors.primaryBg};
+  }
+
+  section:nth-of-type(even) {
+    background-color: ${theme.colors.secondaryBg};
+  }
+
+  img {
+  max-width: 100%;
+  height: auto;
+}
 `

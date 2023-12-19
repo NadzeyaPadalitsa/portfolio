@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Icon } from '../../components/icon/Icon';
+import { theme } from '../../styles/Theme';
 
 export const Footer = () => {
   return (
@@ -35,6 +36,7 @@ const StyledFooter = styled.footer`
   display:  flex;
   justify-content: space-between;
   padding: 10px;
+  background-color: ${theme.colors.primaryBg}
 `
 const AddressList = styled.address`
 
