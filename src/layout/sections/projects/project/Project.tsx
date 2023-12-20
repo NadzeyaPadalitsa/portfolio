@@ -10,7 +10,7 @@ type ProjectPropsType = {
 export const Project = (props: ProjectPropsType) => {
   return (
     <StyledProject>
-      <Image src={props.src} alt=""/>
+      <Image src={props.src} alt={props.title}/>
       <Title>{props.title}</Title>
       <Text>{props.text}</Text>
       <Link href="">Demo</Link>

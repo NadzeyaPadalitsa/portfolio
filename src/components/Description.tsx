@@ -6,4 +6,5 @@ export const Description = styled.p`
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.72px;
+  line-height: 1.4;
 `

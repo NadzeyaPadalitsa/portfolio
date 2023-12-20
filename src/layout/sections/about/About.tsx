@@ -40,7 +40,7 @@ const AboutWrapper = styled.div`
 
 const SoftList = styled.ul`
   padding-left: 50px;
-  list-style-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+  list-style-image: linear-gradient(to left top, ${theme.colors.accent} 10%,  transparent 30%, transparent 70%, ${theme.colors.accent} 90%);
 
   li:not(:last-child) {
     margin-bottom: 10px;

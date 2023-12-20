@@ -31,14 +31,4 @@ const StyledMenu = styled.nav`
     display: flex;
     gap: 30px;
   }
-
-  a {
-    color: ${theme.colors.font};
-
-    &:hover,
-    &:active {
-      color: ${theme.colors.accent};
-    }
-  }
-
 `

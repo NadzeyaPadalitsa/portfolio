@@ -50,5 +50,20 @@ export const GlobalStyled = createGlobalStyle`
   img {
   max-width: 100%;
   height: auto;
-}
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  a {
+    color: ${theme.colors.font};
+
+    &:hover,
+    &:active {
+      color: ${theme.colors.accent};
+    }
+  }
 `

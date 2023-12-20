@@ -26,11 +26,12 @@ const SKillItem = styled.li`
   justify-content: center;
   position: relative;
   padding: 20px;
-  border: 5px solid transparent;
-  border-image: linear-gradient(to left top,#adf2f7 10%,  transparent 30%, transparent 70%, #adf2f7 90%);
+  border: 1px solid transparent;
+  border-image: linear-gradient(to left top, ${theme.colors.accent} 10%,  transparent 30%, transparent 70%, ${theme.colors.accent} 90%);
   border-image-slice: 1;
 `
 const SKillTitle = styled.h3`
-
+  text-transform: uppercase;
+  text-align: center;
 `
 

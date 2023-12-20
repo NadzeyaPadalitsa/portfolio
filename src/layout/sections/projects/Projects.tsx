@@ -6,21 +6,24 @@ import { Project } from './project/Project';
 import sedonaImg from '../../../assets/images/project-1.jpg';
 import storeImg from '../../../assets/images/project-2.png';
 import keksImg from '../../../assets/images/project-3.png';
+import { Container } from '../../../components/Container';
 
 export const Projects = () => {
   return (
     <StyledProjects id="projects">
-      <SectionTitle>My projects</SectionTitle>
-      <FlexWrapper justify={"space-around"} wrap={"wrap"}>
-        <Project title={"Sedona"} src={sedonaImg} text={"Tech stack : HTML , JavaScript, SASS, Gulp, Bem"}/>
-        <Project title ={"Online store"} src={storeImg} text={"Tech stack : HTML , JavaScript, SASS, Gulp, Bem"}/>
-        <Project title={"Keksogram"} src={keksImg} text={"Tech stack : HTML , JavaScript"}/>
-      </FlexWrapper>
+      <Container>
+        <SectionTitle>My projects</SectionTitle>
+        <FlexWrapper justify={"space-between"} wrap={"wrap"}>
+          <Project title={"Sedona"} src={sedonaImg} text={"Tech stack : HTML , JavaScript, SASS, Gulp, Bem"} />
+          <Project title={"Online Store"} src={storeImg} text={"Tech stack : HTML , JavaScript, SASS, Gulp, Bem"} />
+          <Project title={"Keksogram"} src={keksImg} text={"Tech stack : HTML , JavaScript"} />
+        </FlexWrapper>
+      </Container>
     </StyledProjects>
   );
 };
 
 const StyledProjects = styled.section`
-  padding: 50px;
+
 `
 

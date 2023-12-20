@@ -14,16 +14,16 @@ export const Skills = () => {
           Familiar with either Webpack and Vite.
           I know the BEM methodology and how to make CSS animations. My portfolio is written in ReactJS(TypeScript). I know the syntax and capabilities of Styled Components.</Description>
         <SkillsList>
-          <Skill iconId={"html"} title={"html5"} />
-          <Skill iconId={"css"} title={"css3"} />
-          <Skill iconId={"js"} title={"javaScript"} />
-          <Skill iconId={"sass"} title={"sass"} />
-          <Skill iconId={"react"} title={"react JS"} />
-          <Skill iconId={"ts"} title={"typeScript"} />
-          <Skill iconId={"git"} title={"git"} />
-          <Skill iconId={"github"} title={"github"} />
-          <Skill iconId={"figma"} title={"figma"} />
-          <Skill iconId={"styled"} title={"styled components"} />
+          <Skill iconId={"html"} title={"HTML"} />
+          <Skill iconId={"css"} title={"CSS"} />
+          <Skill iconId={"js"} title={"JavaScript"} />
+          <Skill iconId={"sass"} title={"Sass"} />
+          <Skill iconId={"react"} title={"React JS"} />
+          <Skill iconId={"ts"} title={"TypeScript"} />
+          <Skill iconId={"git"} title={"Git"} />
+          <Skill iconId={"github"} title={"Github"} />
+          <Skill iconId={"figma"} title={"Figma"} />
+          <Skill iconId={"styled"} title={"Styled components"} />
         </SkillsList>
       </Container>
     </StyledSkills>

@@ -3,16 +3,14 @@ import photo from '../../../assets/images/photo.jpg'
 import styled from 'styled-components';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Container } from '../../../components/Container';
-//import { theme } from '../../../styles/Theme';
+import { theme } from '../../../styles/Theme';
 
 export const Main = () => {
   return (
     <StyledHero id="hero">
       <Container>
         <FlexWrapper align={"center"} justify={"space-between"}>
-          <PhotoWrapper>
-            <Photo src={photo} alt="Picture Nadia Padalitsa"/>
-          </PhotoWrapper>
+          <Photo src={photo} alt="Picture Nadia Padalitsa" />
           <div>
             <Name>Nadia Padalitsa</Name>
             <HeroTitle>A Web Developer.</HeroTitle>
@@ -27,29 +25,12 @@ const StyledHero = styled.section`
   min-height: 100vh;
   display: flex;
 `
-const PhotoWrapper = styled.div`
-  position: relative;
-  z-index: 0;
-
-  &::before {
-    position: absolute;
-    top: -25px;
-    right: 25px;
-    width: 360px;
-    height: 470px;
-    content: "";
-    z-index: -1;
-
-  }
-`
 
 const Photo = styled.img`
   width: 350px;
   max-height: 430px;
   object-fit: cover;
-  border: 10px solid skyblue;
-    border-image: linear-gradient(to right top, blue, skyblue, blue);
-    border-image-slice: 1;
+  box-shadow: 8px 8px 10px 2px ${theme.colors.accent};
 `
 
 const HeroTitle = styled.h1`
