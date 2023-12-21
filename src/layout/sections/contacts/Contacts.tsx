@@ -12,7 +12,7 @@ export const Contacts = () => {
     <StyledContacts id="contacts">
       <Container>
         <SectionTitle>Contacts</SectionTitle>
-        <FlexWrapper justify={"center"} align={"center"} wrap={"wrap"}>
+        <FlexWrapper justify={"center"} align={"center"} wrap={"wrap"} direction={"column"}>
           <Description>Want to know more or just chat? You are welcome!</Description>
           <StyledForm>
             <Field placeholder={"name"} />

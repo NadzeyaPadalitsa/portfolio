@@ -4,12 +4,13 @@ import styled from 'styled-components';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Container } from '../../../components/Container';
 import { theme } from '../../../styles/Theme';
+import { font } from '../../../styles/Common';
 
 export const Main = () => {
   return (
-    <StyledHero id="hero">
+    <StyledHero id="main">
       <Container>
-        <FlexWrapper align={"center"} justify={"space-between"}>
+        <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap"}>
           <Photo src={photo} alt="Picture Nadia Padalitsa" />
           <div>
             <Name>Nadia Padalitsa</Name>
@@ -28,25 +29,30 @@ const StyledHero = styled.section`
 
 const Photo = styled.img`
   width: 350px;
-  max-height: 430px;
+  height: 430px;
   object-fit: cover;
+  margin-right: 30px;
   box-shadow: 8px 8px 10px 2px ${theme.colors.accent};
+
+  @media ${theme.media.mobile} {
+    width: 310px;
+    height: 380px;
+  }
 `
 
 const HeroTitle = styled.h1`
-  margin: 20px 0;
-  font-size: 27px;
-  font-weight: 400;
+  margin: 0;
+  ${font({ Fmax: 27, Fmin: 20 })}
 `
 
-const Name = styled.h2`
-  font-family: 'Raleway', sans-serif;
-  font-size: 60px;
-  font-weight: 700;
+const Name = styled.p`
+  margin-bottom: 20px;
+  ${font({family: "'Raleway', sans-serif", weight: 700, Fmax: 60, Fmin: 36 })}
   letter-spacing: 5px;
   text-transform: uppercase;
-  background: linear-gradient(to right top, blue, skyblue, blue);
+  background-image: linear-gradient(to right top, blue, skyblue, blue);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
 `

@@ -1,10 +1,15 @@
 import styled from "styled-components";
+import { theme } from "../styles/Theme";
 
 export const Description = styled.p`
   margin-bottom: 20px;
-  padding: 0 100px 0 200px;
-  font-size: 18px;
-  font-weight: 400;
+  padding-left: 30px;
   letter-spacing: 0.72px;
   line-height: 1.4;
+
+  @media ${theme.media.mobile} {
+    max-width: 340px;
+    padding-left: 0;
+    width: 100%;
+  }
 `

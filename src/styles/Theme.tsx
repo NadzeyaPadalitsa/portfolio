@@ -4,6 +4,11 @@ export const theme = {
     secondaryBg: "#161D2A",
     font:"#ffffff",
     accent: "#1f6feb",
-    placeholderColor: "#495057",
+    placeholderColor: "#495057"
+  },
+
+  media: {
+    tablet: "screen and (max-width: 768px)",
+    mobile: "screen and (max-width: 576px)"
   }
 }

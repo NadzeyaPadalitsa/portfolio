@@ -18,6 +18,7 @@ export const GlobalStyled = createGlobalStyle`
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-width: 360px;
   color: ${theme.colors.font};
   font-size: 18px;
   font-weight: 400;
@@ -37,6 +38,14 @@ export const GlobalStyled = createGlobalStyle`
 
   section {
     padding: 100px 0;
+
+    @media ${theme.media.tablet} {
+      padding: 80px 0;
+    }
+
+    @media ${theme.media.mobile} {
+      padding: 50px 0;
+    }
   }
 
   section:nth-of-type(odd) {

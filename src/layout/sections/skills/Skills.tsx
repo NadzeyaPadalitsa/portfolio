@@ -2,18 +2,26 @@ import React from 'react';
 import styled from 'styled-components';
 import { SectionTitle } from '../../../components/SectionTitle';
 import { Skill } from './skill/Skill';
-import { Description } from '../../../components/Description';
 import { Container } from '../../../components/Container';
+import { theme } from '../../../styles/Theme';
+import { font } from '../../../styles/Common';
 
 export const Skills = () => {
   return (
     <StyledSkills id="skills">
       <Container>
-        <SectionTitle> Hard skills</SectionTitle>
-        <Description>I can create adaptive cross-browser optimized layout that is compatible with modern browsers. I know how to automate my work with DevTools, Node.js, npm-skipts, Autoprefixer, Pixel Perfect, Gulp.
-          Familiar with either Webpack and Vite.
-          I know the BEM methodology and how to make CSS animations. My portfolio is written in ReactJS(TypeScript). I know the syntax and capabilities of Styled Components.</Description>
-        <SkillsList>
+        <SectionTitle> Skills</SectionTitle>
+        <SkillTitle>Soft skills</SkillTitle>
+        <SoftList>
+          <li>Search and analysis of information</li>
+          <li>Planning skills</li>
+          <li>Ability to ask questions</li>
+          <li>Working with feedback</li>
+          <li>Teamwork</li>
+          <li>Independence</li>
+        </SoftList>
+        <SkillTitle>Hard skills</SkillTitle>
+        <HardList>
           <Skill iconId={"html"} title={"HTML"} />
           <Skill iconId={"css"} title={"CSS"} />
           <Skill iconId={"js"} title={"JavaScript"} />
@@ -24,7 +32,7 @@ export const Skills = () => {
           <Skill iconId={"github"} title={"Github"} />
           <Skill iconId={"figma"} title={"Figma"} />
           <Skill iconId={"styled"} title={"Styled components"} />
-        </SkillsList>
+        </HardList>
       </Container>
     </StyledSkills>
   );
@@ -33,13 +41,31 @@ export const Skills = () => {
 const StyledSkills = styled.section`
 
 `
-const SkillsList = styled.ul`
+
+const SoftList = styled.ul`
+  padding-left: 50px;
+  list-style-image: linear-gradient(to left top, ${theme.colors.accent} 10%,  transparent 30%, transparent 70%, ${theme.colors.accent} 90%);
+  margin-bottom: 50px;
+
+  li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+`
+
+const HardList = styled.ul`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
-  padding-top: 30px;
   margin: 0;
   list-style-type: none;
+`
+
+const SkillTitle = styled.h3`
+  margin-bottom: 20px;
+  padding-left: 30px;
+  -webkit-text-stroke: 1px ${theme.colors.accent};
+  text-transform: uppercase;
+  ${font({family: "'Raleway', sans-serif", color: "transparent", weight: 700, Fmax: 30, Fmin: 24 })}
 `

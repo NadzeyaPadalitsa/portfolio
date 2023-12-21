@@ -63,7 +63,6 @@ const AddressLink = styled.a`
   justify-content: center;
   align-items: center;
   gap: 10px;
-  color: ${theme.colors.font};
   font-style: normal;
   font-size: 16px;
 

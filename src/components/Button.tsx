@@ -4,7 +4,7 @@ import { theme } from "../styles/Theme";
 export const Button = styled.button`
   align-self: center;
   font-family: 'Popins', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   background-color: ${theme.colors.secondaryBg};
   border: 1px solid transparent;

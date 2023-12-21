@@ -17,13 +17,14 @@ export const Skill = (props: SkillPropsType) => {
   );
 };
 const SKillItem = styled.li`
-  align-items: center;
+  align-self: center;
   background-color: ${theme.colors.secondaryBg};
   display: flex;
   flex-direction: column;
   height: 150px;
   width: 150px;
   justify-content: center;
+  align-items: center;
   position: relative;
   padding: 20px;
   border: 1px solid transparent;
@@ -33,5 +34,6 @@ const SKillItem = styled.li`
 const SKillTitle = styled.h3`
   text-transform: uppercase;
   text-align: center;
+  color: ${theme.colors.font}
 `
 
