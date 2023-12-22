@@ -1,36 +1,33 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Logo } from '../../components/logo/Logo';
-import { Menu } from '../../components/menu/Menu';
-import { theme } from '../../styles/Theme';
+import { DesktopMenu } from './headerMenu/desktopMenu/DesktopMenu';
 import { Container } from '../../components/Container';
 import { FlexWrapper } from '../../components/FlexWrapper';
-import { MobileMenu } from './mobileMenu/MobileMenu';
+import { MobileMenu } from './headerMenu/mobileMenu/MobileMenu';
+import { S } from './Header_Styles';
 
-export const Header = () => {
+export const Header: React.FC = () => {
+  const [width, setWidth] = React.useState(window.innerWidth);
+  const breakpoint = 768;
+
+  React.useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth)
+    window.addEventListener("resize", handleWindowResize);
+
+
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
   return (
-    <StyledHeader>
+    <S.Header>
       <Container>
         <FlexWrapper justify={"space-between"} align={"center"}>
           <Logo />
-          <Menu />
-          <MobileMenu/>
+          {width<breakpoint ? <MobileMenu /> : <DesktopMenu />}
         </FlexWrapper>
       </Container>
-    </StyledHeader>
+    </S.Header>
   );
 };
 
 
-const StyledHeader = styled.header`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 99999;
-  min-height: 100px;
-  background-color: ${theme.colors.primaryBg};
-`
+
