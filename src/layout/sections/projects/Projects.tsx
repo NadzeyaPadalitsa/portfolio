@@ -1,5 +1,5 @@
 import React from 'react';
-import { SectionTitle } from '../../../components/SectionTitle';
+import { SectionTitle } from '../../../components/title/SectionTitle';
 import styled from 'styled-components';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Project } from './project/Project';
