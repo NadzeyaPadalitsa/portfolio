@@ -4,7 +4,6 @@ import { Icon } from '../../components/icon/Icon';
 import { theme } from '../../styles/Theme';
 import { Container } from '../../components/Container';
 import { FlexWrapper } from '../../components/FlexWrapper';
-import { VisuallyHidden } from '../../components/VisuallyHidden';
 
 export const Footer = () => {
   return (
@@ -23,20 +22,17 @@ export const Footer = () => {
           </AddressList>
           <SocialList>
             <SocialItem>
-              <SocialLink href={"https://t.me/@nadya31121990"}>
-                <VisuallyHidden>My telegram</VisuallyHidden>
+              <SocialLink aria-label="My telegram" href={"https://t.me/@nadya31121990"}>
                 <Icon iconId={"telegram"} width={"40px"} height={"34px"} viewBox={"0 0 40 34"} />
               </SocialLink>
             </SocialItem>
             <SocialItem>
-              <SocialLink href={"https://www.instagram.com/Nadin3112/"}>
-                <VisuallyHidden>My instagram</VisuallyHidden>
+              <SocialLink aria-label="My instagram" href={"https://www.instagram.com/Nadin3112/"}>
                 <Icon iconId={"instagram"} width={"35px"} height={"35px"} viewBox={"0 0 35 35"} />
               </SocialLink>
             </SocialItem>
             <SocialItem>
-              <SocialLink href={"https://github.com/Nadin3112"}>
-                <VisuallyHidden>My github</VisuallyHidden>
+              <SocialLink aria-label="My github" href={"https://github.com/Nadin3112"}>
                 <Icon iconId={"gith"} width={"35px"} height={"35px"} viewBox={"0 0 35 35"} />
               </SocialLink>
             </SocialItem>

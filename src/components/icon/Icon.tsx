@@ -6,6 +6,7 @@ type IconPropsType = {
   width?: string
   height?: string
   viewBox?: string
+  role?: string
 }
 
 export const Icon = (props: IconPropsType) => {

@@ -5,8 +5,8 @@ import { theme } from '../../styles/Theme';
 
 export const Logo = () => {
   return (
-    <LogoLink aria-label="logo vebsite"  href={"index.html"}>
-      <Icon aria-hidden="true" iconId = {"logo"} width={"185"} height={"48"} viewBox={"0 0 185 48"} />
+    <LogoLink aria-label="logo vebsite" href={"index.html"}>
+      <Icon role="img" iconId = {"logo"} width={"185"} height={"48"} viewBox={"0 0 185 48"} />
     </LogoLink>
   );
 };
