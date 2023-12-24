@@ -3,15 +3,18 @@ import { SectionTitle } from '../../../components/title/SectionTitle';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Project } from './project/Project';
 import sedonaImg from '../../../assets/images/project-1.jpg';
+import sedonaImg2x from '../../../assets/images/project-1@2x.jpg';
 import storeImg from '../../../assets/images/project-2.png';
+import storeImg2x from '../../../assets/images/project-2@2x.png';
 import keksImg from '../../../assets/images/project-3.png';
+import keksImg2x from '../../../assets/images/project-3@2x.png';
 import { Container } from '../../../components/Container';
 import { S } from './Projects_Styles';
 
 const projectData = [
-  { title: "Sedona", src: sedonaImg, text: "Tech stack : HTML , JavaScript, SASS, Gulp, Bem" },
-  { title: "Online Store", src: storeImg, text: "Tech stack : HTML , JavaScript, SASS, Gulp, Bem" },
-  { title: "Keksogram", src: keksImg, text: "Tech stack : HTML , JavaScript" }
+  { title: "Sedona", src: sedonaImg, srcSet:`${sedonaImg2x} 2x`, text: "Tech stack : HTML , JavaScript, SASS, Gulp, Bem" },
+  { title: "Online Store", src: storeImg, srcSet:`${storeImg2x} 2x`, text: "Tech stack : HTML , JavaScript, SASS, Gulp, Bem" },
+  { title: "Keksogram", src: keksImg, srcSet:`${keksImg2x} 2x`, text: "Tech stack : HTML , JavaScript" }
 ]
 
 export const Projects: React.FC = () => {
@@ -21,7 +24,7 @@ export const Projects: React.FC = () => {
         <SectionTitle>My projects</SectionTitle>
         <FlexWrapper wrap={"wrap"}>
           {projectData.map((p, index) => {
-            return  <Project title={p.title} src={p.src} text={p.text} key={index} />
+            return  <Project title={p.title} src={p.src} srcSet={p.srcSet} text={p.text} key={index} />
           })}
         </FlexWrapper>
       </Container>
