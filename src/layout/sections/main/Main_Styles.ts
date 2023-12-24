@@ -26,7 +26,11 @@ const Photo = styled.img`
 
 const MainTitle = styled.h1`
   margin: 0;
-  ${font({ Fmax: 27, Fmin: 20 })}
+  ${font({ Fmax: 28, Fmin: 20 })};
+
+  p {
+    display: none;
+  }
 `
 
 const Name = styled.p`
