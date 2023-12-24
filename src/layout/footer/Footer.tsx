@@ -1,96 +1,44 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Icon } from '../../components/icon/Icon';
-import { theme } from '../../styles/Theme';
 import { Container } from '../../components/Container';
 import { FlexWrapper } from '../../components/FlexWrapper';
+import { Link } from '../../components/Link';
+import { S } from './Footer_Styles';
 
-export const Footer = () => {
+const socialItemsData = [
+  { iconId: "telegram", ariaLabel: "My telegram", href: "https://t.me/@nadya31121990", width: "40px", height: "34px", viewBox:"0 0 40 34"},
+  { iconId: "instagram", ariaLabel: "My instagram", href: "https://www.instagram.com/Nadin3112/", width: "35px", height: "35px", viewBox:"0 0 35 35"},
+  { iconId: "gith", ariaLabel: "My github", href: "https://github.com/Nadin3112", width: "35px", height: "35px", viewBox:"0 0 35 35"}
+]
+
+export const Footer: React.FC = () => {
   return (
-    <StyledFooter>
+    <S.Footer>
       <Container>
-        <FlexWrapper justify={"space-between"} align={"center"} wrap={"wrap"}>
-          <AddressList>
-            <AddressLink href={"tel:+375298066793"}>
+        <FlexWrapper justify={"center"} align={"center"} wrap={"wrap"}>
+          <S.AddressList>
+            <Link href={"tel:+375298066793"}>
               <Icon iconId={"tel"} width={"20px"} height={"20px"} viewBox={"0 0 25 25"} />
               <span>+375298066793</span>
-            </AddressLink>
-            <AddressLink href={"mailto:nadya-manko@mail.ru"}>
+            </Link>
+            <Link href={"mailto:nadya-manko@mail.ru"}>
               <Icon iconId={"email"} width={"20px"} height={"20px"} viewBox={"0 0 25 25"} />
               <span>nadya-manko@mail.ru</span>
-            </AddressLink>
-          </AddressList>
-          <SocialList>
-            <SocialItem>
-              <SocialLink aria-label="My telegram" href={"https://t.me/@nadya31121990"}>
-                <Icon iconId={"telegram"} width={"40px"} height={"34px"} viewBox={"0 0 40 34"} />
-              </SocialLink>
-            </SocialItem>
-            <SocialItem>
-              <SocialLink aria-label="My instagram" href={"https://www.instagram.com/Nadin3112/"}>
-                <Icon iconId={"instagram"} width={"35px"} height={"35px"} viewBox={"0 0 35 35"} />
-              </SocialLink>
-            </SocialItem>
-            <SocialItem>
-              <SocialLink aria-label="My github" href={"https://github.com/Nadin3112"}>
-                <Icon iconId={"gith"} width={"35px"} height={"35px"} viewBox={"0 0 35 35"} />
-              </SocialLink>
-            </SocialItem>
-          </SocialList>
-          <Copyright>© 2023 Nadia Padalitsa, All Rights Reserved.</Copyright>
+            </Link>
+          </S.AddressList>
+          <S.SocialList>
+            {socialItemsData.map((s, index) => {
+              return <S.SocialItem key={index}>
+                <S.SocialLink aria-label={s.ariaLabel} href={s.href}>
+                  <Icon iconId={s.iconId} width={s.width} height={s.height} viewBox={s.viewBox} />
+                </S.SocialLink>
+              </S.SocialItem>
+            })}
+          </S.SocialList>
+          <S.Copyright>© 2023 Nadia Padalitsa, All Rights Reserved.</S.Copyright>
         </FlexWrapper>
       </Container>
-    </StyledFooter>
+    </S.Footer>
   );
 };
 
-const StyledFooter = styled.footer`
-  padding: 30px;
-  background-color: ${theme.colors.secondaryBg}
-`
-const AddressList = styled.address`
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 16px;
-`
-const AddressLink = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  font-style: normal;
-  font-size: 16px;
-
-  span {
-    align-self: center;
-  }
-`
-const SocialList = styled.ul`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 35px;
-`
-const SocialItem = styled.li`
-
-`
-const SocialLink = styled.a`
-  width: 60px;
-  height: 60px;
-  background-color: ${theme.colors.primaryBg};
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid transparent;
-  border-image: linear-gradient(to left top, ${theme.colors.accent} 10%,  transparent 30%, transparent 70%, ${theme.colors.accent} 90%);
-  border-image-slice: 1;
-
-  &:hover{
-    border: 1px solid ${theme.colors.accent};
-    color: ${theme.colors.accent};
-  }
-`
-const Copyright = styled.small`
-
-`
