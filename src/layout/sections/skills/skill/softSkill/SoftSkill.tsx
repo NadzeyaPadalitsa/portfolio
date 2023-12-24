@@ -2,7 +2,7 @@ import React from 'react';
 import { SoftItem} from './SoftItem';
 import { S } from '../../Skils_Styles';
 
-const SoftSkillData = [
+const softSkillsData = [
   {text: "Search and analysis of information" },
   {text: "Planning skills"},
   {text: "Ability to ask questions"},
@@ -14,7 +14,7 @@ const SoftSkillData = [
 export const SoftSkill: React.FC = () => {
   return (
     <S.SoftList>
-      {SoftSkillData.map((s, index) => {
+      {softSkillsData.map((s, index) => {
         return <SoftItem text={s.text} key={index}/>
       })}
     </S.SoftList>

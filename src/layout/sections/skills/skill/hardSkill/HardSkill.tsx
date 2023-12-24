@@ -2,7 +2,7 @@ import React from 'react';
 import { HardItem } from './HardItem';
 import { S } from '../../Skils_Styles';
 
-const HardSkillData = [
+const hardSkillsData = [
   { iconId: "html", title:"HTML" },
   {iconId: "css", title: "CSS"},
   {iconId:"js", title:"JavaScript"},
@@ -18,8 +18,8 @@ const HardSkillData = [
 export const HardSkill: React.FC = () => {
   return (
     <S.HardList>
-      {HardSkillData.map((s, index) => {
-        return <HardItem iconId={s.iconId} title={s.title} key={index}/>
+      {hardSkillsData.map((h, index) => {
+        return <HardItem iconId={h.iconId} title={h.title} key={index}/>
       })}
     </S.HardList>
   );
