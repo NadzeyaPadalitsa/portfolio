@@ -1,5 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
+import { Icon } from '../../../../components/icon/Icon';
+import { FlexWrapper } from '../../../../components/FlexWrapper';
+import { Link } from '../../../../components/Link';
+import { S } from '../Projects_Styles';
 
 type ProjectPropsType = {
   title: string
@@ -7,35 +10,22 @@ type ProjectPropsType = {
   text: string
 }
 
-export const Project = (props: ProjectPropsType) => {
+export const Project:React.FC<ProjectPropsType> = (props: ProjectPropsType) => {
   return (
-    <StyledProject>
-      <Image src={props.src} alt={props.title}/>
-      <Title>{props.title}</Title>
-      <Text>{props.text}</Text>
-      <Link href="">Demo</Link>
-      <Link href="">Code</Link>
-    </StyledProject>
+    <S.Project>
+      <S.Image src={props.src} alt={props.title} />
+      <S.Title>{props.title}</S.Title>
+      <S.Text>{props.text}</S.Text>
+      <FlexWrapper justify={"center"} align={"start"}>
+        <Link href="">
+          <Icon iconId={"preview"} width={"20px"} height={"20px"} viewBox={"0 0 20 20"} />
+          <span>Live Preview</span>
+        </Link>
+        <Link href="">
+          <Icon iconId={"code"} width={"20px"} height={"20px"} viewBox={"0 0 20 20"} />
+          <span>View Code</span>
+        </Link>
+      </FlexWrapper>
+    </S.Project>
   );
 };
-
-const StyledProject = styled.div`
-  max-width: 350px;
-  width: 100%;
-`
-
-const Image = styled.img`
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-`
-const Title = styled.h3`
-
-`
-const Text = styled.p`
-
-`
-
-const Link = styled.a`
-
-`

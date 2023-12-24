@@ -1,29 +1,30 @@
 import React from 'react';
 import { SectionTitle } from '../../../components/title/SectionTitle';
-import styled from 'styled-components';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Project } from './project/Project';
 import sedonaImg from '../../../assets/images/project-1.jpg';
 import storeImg from '../../../assets/images/project-2.png';
 import keksImg from '../../../assets/images/project-3.png';
 import { Container } from '../../../components/Container';
+import { S } from './Projects_Styles';
 
-export const Projects = () => {
+const projectData = [
+  { title: "Sedona", src: sedonaImg, text: "Tech stack : HTML , JavaScript, SASS, Gulp, Bem" },
+  { title: "Online Store", src: storeImg, text: "Tech stack : HTML , JavaScript, SASS, Gulp, Bem" },
+  { title: "Keksogram", src: keksImg, text: "Tech stack : HTML , JavaScript" }
+]
+
+export const Projects: React.FC = () => {
   return (
-    <StyledProjects id="projects">
+    <S.Projects id="projects">
       <Container>
         <SectionTitle>My projects</SectionTitle>
-        <FlexWrapper justify={"space-between"} wrap={"wrap"}>
-          <Project title={"Sedona"} src={sedonaImg} text={"Tech stack : HTML , JavaScript, SASS, Gulp, Bem"} />
-          <Project title={"Online Store"} src={storeImg} text={"Tech stack : HTML , JavaScript, SASS, Gulp, Bem"} />
-          <Project title={"Keksogram"} src={keksImg} text={"Tech stack : HTML , JavaScript"} />
+        <FlexWrapper wrap={"wrap"}>
+          {projectData.map((p, index) => {
+            return  <Project title={p.title} src={p.src} text={p.text} key={index} />
+          })}
         </FlexWrapper>
       </Container>
-    </StyledProjects>
+    </S.Projects>
   );
 };
-
-const StyledProjects = styled.section`
-
-`
-
