@@ -27,7 +27,13 @@ export const GlobalStyled = createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: ${theme.colors.accent};
+    color: ${theme.colors.font};
+    transition: 0.2s;
+
+    &:hover,
+    &:active {
+      color: ${theme.colors.accent};
+    }
   }
 
   ul {
@@ -67,12 +73,4 @@ export const GlobalStyled = createGlobalStyle`
     letter-spacing: 1px;
   }
 
-  a {
-    color: ${theme.colors.font};
-
-    &:hover,
-    &:active {
-      color: ${theme.colors.accent};
-    }
-  }
 `

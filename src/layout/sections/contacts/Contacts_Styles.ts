@@ -29,13 +29,18 @@ const Field = styled.input`
   border-image: linear-gradient(to left top, ${theme.colors.accent} 10%,  transparent 30%, transparent 70%, ${theme.colors.accent} 90%);
   border-image-slice: 1;
   color: ${theme.colors.font};
+  transition: 0.5s;
 
   &::placeholder {
-    color: ${theme.colors.placeholderColor}
+    color: ${theme.colors.placeholderColor};
   }
 
   &:focus-visible {
-    outline: 1px solid ${theme.colors.accent}
+    outline: 1px solid ${theme.colors.accent};
+  }
+
+  &:hover {
+    border: 1px solid ${theme.colors.accent};
   }
 `
 

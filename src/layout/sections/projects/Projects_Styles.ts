@@ -16,6 +16,11 @@ const Project = styled.div`
   border-image: linear-gradient(to left top, ${theme.colors.accent} 10%,  transparent 30%, transparent 70%, ${theme.colors.accent} 90%);
   border-image-slice: 1;
   background-color: ${theme.colors.primaryBg};
+  transition: 0.5s;
+
+  &:hover {
+    border: 1px solid ${theme.colors.accent};
+  }
 
 `
 

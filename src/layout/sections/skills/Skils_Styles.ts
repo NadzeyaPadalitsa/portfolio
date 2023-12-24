@@ -13,9 +13,9 @@ const SoftList = styled.ul`
   margin-bottom: 50px;
 `
 const SoftText = styled.li`
-&:not(:last-child) {
-  margin-bottom: 30px;
-}
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 `
 
 //HardSkill
@@ -38,16 +38,22 @@ const HardSKillItem = styled.li`
   width: 150px;
   justify-content: center;
   align-items: center;
+  color: ${theme.colors.font};
   position: relative;
   padding: 20px;
   border: 1px solid transparent;
   border-image: linear-gradient(to left top, ${theme.colors.accent} 10%,  transparent 30%, transparent 70%, ${theme.colors.accent} 90%);
   border-image-slice: 1;
+  transition: 0.5s;
+
+  &:hover {
+    border: 1px solid ${theme.colors.accent};
+    color: ${theme.colors.accent};
+  }
 `
 const HardItemTitle = styled.h4`
   text-transform: uppercase;
   text-align: center;
-  color: ${theme.colors.font}
 `
 
 export const S = {

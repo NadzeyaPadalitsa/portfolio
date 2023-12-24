@@ -13,6 +13,7 @@ export const Logo:React.FC = () => {
 
 const LogoLink = styled.a`
   color: ${theme.colors.font};
+  transition: 0.5s;
 
   &:hover {
     color: ${theme.colors.accent};
