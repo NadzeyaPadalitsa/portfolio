@@ -5,19 +5,6 @@ const Skills = styled.section`
   position: relative;
 `
 
-//SoftSkill
-
-const SoftList = styled.ul`
-  padding-left: 50px;
-  list-style-image: linear-gradient(to left top, ${theme.colors.accent} 10%,  transparent 30%, transparent 70%, ${theme.colors.accent} 90%);
-  margin-bottom: 50px;
-`
-const SoftText = styled.li`
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
-`
-
 //HardSkill
 
 const HardList = styled.ul`
@@ -58,8 +45,6 @@ const HardItemTitle = styled.h4`
 
 export const S = {
   Skills,
-  SoftList,
-  SoftText,
   HardList,
   HardSKillItem,
   HardItemTitle

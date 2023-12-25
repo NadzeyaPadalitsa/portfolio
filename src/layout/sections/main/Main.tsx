@@ -13,7 +13,7 @@ import Typewriter from 'typewriter-effect';
 
 export const Main: React.FC = () => {
   return (
-    <S.Main id="main">
+    <S.Main id={"home"}>
       <Container>
         <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap"}>
           <Tilt>

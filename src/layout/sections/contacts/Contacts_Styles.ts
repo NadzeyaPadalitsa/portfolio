@@ -8,19 +8,19 @@ const Contacts = styled.section`
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
   max-width: 540px;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 40px;
 
   textarea {
     resize: none;
-    height: 155px;
+    height: 162px;
   }
 `
 
 const Field = styled.input`
-  padding: 10px 15px;
+  padding: 12px 15px;
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
   font-weight: 400;

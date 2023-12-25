@@ -1,5 +1,5 @@
 import React from 'react';
-import { SectionTitle } from '../../../components/title/SectionTitle';
+import { SectionTitle } from '../../../components/SectionTitle';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Button } from '../../../components/Button';
 import { Container } from '../../../components/Container';
@@ -8,7 +8,7 @@ import { S } from './Contacts_Styles';
 
 export const Contacts: React.FC = () => {
   return (
-    <S.Contacts id="contacts">
+    <S.Contacts id={"contacts"}>
       <Container>
         <SectionTitle>Contacts</SectionTitle>
         <FlexWrapper justify={"center"} align={"center"} wrap={"wrap"} direction={"column"}>

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Description } from '../../../components/Description';
-import { SectionTitle } from '../../../components/title/SectionTitle';
+import { SectionTitle } from '../../../components/SectionTitle';
 import { Container } from '../../../components/Container';
 import { S } from './About_Styles';
 
 export const About: React.FC = () => {
   return (
-    <S.About id="about">
+    <S.About id={"about"}>
       <Container>
         <SectionTitle>About me</SectionTitle>
         <S.AboutWrapper>
@@ -15,7 +15,9 @@ export const About: React.FC = () => {
           I can create adaptive cross-browser optimized layout that is compatible with modern browsers. I know how to automate my work with DevTools, Node.js, npm-skipts, Autoprefixer, Pixel Perfect, Gulp.
           Familiar with either Webpack and Vite.
           I know the BEM methodology and how to make CSS animations. My portfolio is written in ReactJS(TypeScript). I know the syntax and capabilities of Styled Components.
-          I write code thinking about clean and beautiful solutions to problems. Ready to implement great projects with wonderful people.</Description>
+          I write code thinking about clean and beautiful solutions to problems. Ready to implement great projects with wonderful people.
+          I have the following soft skills: ыearch and analysis of information, planning skills, ability to ask questions, working with feedback, teamwork, independence
+          </Description>
         </S.AboutWrapper>
       </Container>
     </S.About >

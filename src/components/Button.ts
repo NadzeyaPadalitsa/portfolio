@@ -10,7 +10,7 @@ export const Button = styled.button`
   border: 1px solid transparent;
   border-image: linear-gradient(to left top, ${theme.colors.accent} 10%,  transparent 30%, transparent 70%, ${theme.colors.accent} 90%);
   border-image-slice: 1;
-  padding: 10px;
+  padding: 14px;
   width: 200px;
   color: ${theme.colors.font};
   cursor: pointer;
