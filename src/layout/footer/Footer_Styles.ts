@@ -3,6 +3,7 @@ import { theme } from '../../styles/Theme';
 import { FlexWrapper } from '../../components/FlexWrapper';
 
 const Footer = styled.footer`
+  position: relative;
   padding: 30px;
   background-color: ${theme.colors.secondaryBg};
 

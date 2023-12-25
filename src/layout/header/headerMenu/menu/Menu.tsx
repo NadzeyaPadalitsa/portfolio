@@ -5,7 +5,7 @@ export const Menu: React.FC = () => {
   return (
     <S.MenuList>
       <S.MenuItem>
-        <S.Link href="#main">Home</S.Link>
+        <S.Link  href="#main">Home</S.Link>
       </S.MenuItem>
       <S.MenuItem>
         <S.Link href="#about">About</S.Link>

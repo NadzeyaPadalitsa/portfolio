@@ -5,7 +5,7 @@ import { theme } from "../../../styles/Theme"
 
 
 const About = styled.section`
-
+  position: relative;
 `
 const AboutWrapper = styled.div`
   max-width: 800px;

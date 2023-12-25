@@ -42,7 +42,6 @@ const Name = styled.p`
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 `
 
 export const S = {

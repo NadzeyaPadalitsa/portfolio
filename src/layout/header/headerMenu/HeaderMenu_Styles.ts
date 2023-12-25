@@ -25,6 +25,7 @@ const Link = styled.a`
   @media ${theme.media.mobile} {
     font-size: 36px;
   }
+
 `
 
 //MobileMenu
