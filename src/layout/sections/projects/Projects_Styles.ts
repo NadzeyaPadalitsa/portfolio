@@ -1,16 +1,17 @@
 import styled from 'styled-components';
-import {theme} from '../../../styles/Theme';
+import { theme } from '../../../styles/Theme';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 
 const Projects = styled.section`
+  position: relative;
   ${FlexWrapper} {
     gap: 40px;
   }
 `
 
 const Project = styled.div`
-  max-width: 550px;
-  width: 100%;
+  flex-grow: 1;
+  width: 330px;
   padding: 25px 25px 40px;
   border: 1px solid transparent;
   border-image: linear-gradient(to left top, ${theme.colors.accent} 10%,  transparent 30%, transparent 70%, ${theme.colors.accent} 90%);
@@ -22,6 +23,10 @@ const Project = styled.div`
     border: 1px solid ${theme.colors.accent};
   }
 
+  ${theme.media.desktop} {
+    max-width: 550px;
+  }
+
 `
 
 const Image = styled.img`
@@ -29,6 +34,7 @@ const Image = styled.img`
   height: 280px;
   object-fit: cover;
 `
+
 const Title = styled.h3`
   position: relative;
   margin-top: 40px;
