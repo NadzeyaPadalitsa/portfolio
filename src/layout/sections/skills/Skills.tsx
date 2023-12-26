@@ -23,13 +23,13 @@ export const Skills: React.FC = () => {
     <S.Skills id={"skills"}>
       <Container>
         <SectionTitle> Skills</SectionTitle>
-        <S.SkillList>
-          <Fade cascade={true} damping={0.3}>
+        <Fade cascade={true} damping={0.3}>
+          <S.SkillList>
             {skillsData.map((s, index) => {
               return <Skill iconId={s.iconId} title={s.title} key={index} />
             })}
-          </Fade>
-        </S.SkillList>
+          </S.SkillList>
+        </Fade>
       </Container>
     </S.Skills>
   );

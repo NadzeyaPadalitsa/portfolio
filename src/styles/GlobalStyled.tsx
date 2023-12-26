@@ -73,4 +73,7 @@ export const GlobalStyled = createGlobalStyle`
     letter-spacing: 1px;
   }
 
+  @media ${theme.media.tablet} {
+    animation: none;
+  }
 `
