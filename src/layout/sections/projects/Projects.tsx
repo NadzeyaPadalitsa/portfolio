@@ -13,7 +13,7 @@ import portfolioImg2x from '../../../assets/images/project-4@2x.png';
 import { Container } from '../../../components/Container';
 import { S } from './Projects_Styles';
 
-const projectData = [
+const projectsData = [
   { title: "Sedona", src: sedonaImg, srcSet:`${sedonaImg2x} 2x`, text: "Tech stack : HTML, JavaScript, SASS, Gulp, Bem" },
   { title: "Online Store", src: storeImg, srcSet:`${storeImg2x} 2x`, text: "Tech stack : HTML, JavaScript, SASS, Gulp, Bem" },
   { title: "Keksogram", src: keksImg, srcSet:`${keksImg2x} 2x`, text: "Tech stack : HTML, JavaScript, Vite" },
@@ -26,7 +26,7 @@ export const Projects: React.FC = () => {
       <Container>
         <SectionTitle>My projects</SectionTitle>
         <FlexWrapper justify={"space-between"} align={"flex-start"} wrap={"wrap"}>
-          {projectData.map((p, index) => {
+          {projectsData.map((p, index) => {
             return  <Project title={p.title} src={p.src} srcSet={p.srcSet} text={p.text} key={index} />
           })}
         </FlexWrapper>

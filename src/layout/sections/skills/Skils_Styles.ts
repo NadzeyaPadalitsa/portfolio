@@ -5,9 +5,9 @@ const Skills = styled.section`
   position: relative;
 `
 
-//HardSkill
+//Skill
 
-const HardList = styled.ul`
+const SkillList = styled.ul`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,7 @@ const HardList = styled.ul`
   margin: 0;
   list-style-type: none;
 `
-const HardSKillItem = styled.li`
+const SKillItem = styled.li`
   align-self: center;
   background-color: ${theme.colors.secondaryBg};
   display: flex;
@@ -31,21 +31,15 @@ const HardSKillItem = styled.li`
   border: 1px solid transparent;
   border-image: linear-gradient(to left top, ${theme.colors.accent} 10%,  transparent 30%, transparent 70%, ${theme.colors.accent} 90%);
   border-image-slice: 1;
-  transition: 0.5s;
-
-  &:hover {
-    border: 1px solid ${theme.colors.accent};
-    color: ${theme.colors.accent};
-  }
 `
-const HardItemTitle = styled.h4`
+const SkillTitle = styled.h3`
   text-transform: uppercase;
   text-align: center;
 `
 
 export const S = {
   Skills,
-  HardList,
-  HardSKillItem,
-  HardItemTitle
+  SkillList,
+  SKillItem,
+  SkillTitle
 }

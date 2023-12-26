@@ -24,6 +24,7 @@ const AboutWrapper = styled.div`
   }
 
   ${Description} {
+    margin-bottom: 30px;
     a {
       font-weight: 700;
     }

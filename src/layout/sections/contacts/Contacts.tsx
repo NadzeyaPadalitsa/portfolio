@@ -14,9 +14,9 @@ export const Contacts: React.FC = () => {
         <FlexWrapper justify={"center"} align={"center"} wrap={"wrap"} direction={"column"}>
           <Description>Want to know more or just chat? You are welcome!</Description>
           <S.Form>
-            <S.Field placeholder={"name"} />
-            <S.Field type={"email"} placeholder={"e-mail"} />
-            <S.Field as={"textarea"} placeholder={"Message"} />
+            <S.Field required placeholder={"name"} />
+            <S.Field required type={"email"} placeholder={"e-mail"} />
+            <S.Field required as={"textarea"} placeholder={"Message"} />
             <Button type={"submit"}>Send message</Button>
           </S.Form>
         </FlexWrapper>

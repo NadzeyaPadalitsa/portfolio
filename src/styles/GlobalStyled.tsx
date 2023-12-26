@@ -28,7 +28,7 @@ export const GlobalStyled = createGlobalStyle`
   a {
     text-decoration: none;
     color: ${theme.colors.font};
-    transition: 0.2s;
+    transition: ${theme.animations.transition};
 
     &:hover,
     &:active {

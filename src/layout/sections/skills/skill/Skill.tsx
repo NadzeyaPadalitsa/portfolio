@@ -8,13 +8,12 @@ type HardPropsType = {
   title: string
 }
 
-export const HardItem: React.FC<HardPropsType> = (props: HardPropsType) => {
+export const Skill: React.FC<HardPropsType> = (props: HardPropsType) => {
   return (
-    <S.HardSKillItem>
+    <S.SKillItem>
       <Icon iconId = {props.iconId} viewBox={"-15 0 150 150"}/>
-      <S.HardItemTitle>{props.title}</S.HardItemTitle>
-    </S.HardSKillItem>
+      <S.SkillTitle>{props.title}</S.SkillTitle>
+    </S.SKillItem>
   );
 };
-
 

@@ -11,6 +11,11 @@ import React from 'react';
 //import keksImgWebp2x from '../../../../assets/images/project-3@2x.webp';
 //import keksImgAvif from '../../../../assets/images/project-3.avif';
 //import keksImgAvif2x from '../../../../assets/images/project-3@2x.avif';
+//import portfolioImgWebp from '../../../../assets/images/project-4.webp';
+//import portfolioImgWebp2x from '../../../../assets/images/project-4@2x.webp';
+//import portfolioImgAvif from '../../../../assets/images/project-4.avif';
+//import portfolioImgAvif2x from '../../../../assets/images/project-4@2x.avif';
+
 import { Icon } from '../../../../components/icon/Icon';
 import { FlexWrapper } from '../../../../components/FlexWrapper';
 import { Link } from '../../../../components/Link';
@@ -25,6 +30,13 @@ type ProjectPropsType = {
   text: string
 }
 
+/*const projectData = [
+  {  },
+  { },
+  {  },
+  { }
+]*/
+
 export const Project: React.FC<ProjectPropsType> = (props: ProjectPropsType) => {
   return (
     <S.Project>
@@ -37,11 +49,11 @@ export const Project: React.FC<ProjectPropsType> = (props: ProjectPropsType) => 
       <S.Text>{props.text}</S.Text>
       <FlexWrapper justify={"center"} align={"start"}>
         <Link href="">
-          <Icon iconId={"preview"} width={"20px"} height={"20px"} viewBox={"0 0 20 20"} />
+          <Icon iconId={"preview"} width={"20"} height={"20"} viewBox={"0 0 20 20"} />
           <span>Live Preview</span>
         </Link>
         <Link href="">
-          <Icon iconId={"code"} width={"20px"} height={"20px"} viewBox={"0 0 20 20"} />
+          <Icon iconId={"code"} width={"20"} height={"20"} viewBox={"0 0 20 20"} />
           <span>View Code</span>
         </Link>
       </FlexWrapper>
