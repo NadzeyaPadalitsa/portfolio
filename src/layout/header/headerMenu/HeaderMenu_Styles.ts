@@ -62,10 +62,10 @@ const MobileMenuPopup = styled.div<{isOpen: boolean}>`
 
 const BurgerButton = styled.button<{isOpen: boolean}>`
   position: absolute;
-  width: 45px;
-  height: 45px;
-  top: 25px;
-  right: 20px;
+  width: 48px;
+  height: 10px;
+  top: 30px;
+  right: 10px;
   background-color: ${theme.colors.primaryBg};
   z-index: 9999999;
   border: none;
@@ -77,10 +77,11 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
       position: absolute;
       top: 0;
       left: 0;
-      width: 36px;
+      width: 32px;
       height: 2px;
       background-color: ${theme.colors.font};
       box-shadow: 0 8px 0 0 ${theme.colors.font}, 0 16px 0 0 ${theme.colors.font};
+      transition: transform 0.3s ease-in;
 
       ${props => props.isOpen && css <{isOpen: boolean}> `
         transform: rotate(45deg);
