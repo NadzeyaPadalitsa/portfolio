@@ -69,7 +69,7 @@ export const GlobalStyled = createGlobalStyle`
 
   h3 {
     font-size: 16px;
-    font-weight: 700;
+    //font-weight: 700;
     letter-spacing: 1px;
   }
 

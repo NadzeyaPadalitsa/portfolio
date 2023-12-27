@@ -18,6 +18,7 @@ const Project = styled.div`
   border-image-slice: 1;
   background-color: ${theme.colors.primaryBg};
 
+
   ${theme.media.desktop} {
     max-width: 550px;
   }

@@ -17,7 +17,7 @@ export const GoTopBtn: React.FC = () => {
   return (
     <>
       {showBtn && (
-        <StyledGoTopBtn onClick={() => { scroll.scrollToTop() }}>
+        <StyledGoTopBtn aria-label={"to main"} onClick={() => { scroll.scrollToTop() }}>
           <Icon iconId={"goTop"} width={"30"} height={"30"} viewBox={"0 0 30 30"} />
         </StyledGoTopBtn>
       )}

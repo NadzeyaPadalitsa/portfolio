@@ -20,7 +20,7 @@ export const Main: React.FC = () => {
             <picture>
               <source type="image/avif" srcSet={`${photoAvif} 1x, ${photoAvif2x} 2x`} />
               <source type="image/webp" srcSet={`${photoWebp} 1x, ${photoWebp2x} 2x`} />
-              <S.Photo src={photo} srcSet={`${photo2x} 2x`} alt="Picture Nadia Padalitsa" />
+              <S.Photo src={photo} srcSet={`${photo2x} 2x`} alt="Picture Nadia Padalitsa" width={"350"} height={"430"} />
             </picture>
           </Tilt>
           <div>

@@ -18,7 +18,10 @@ export const Menu: React.FC = () => {
                       spy={true}
                       offset={-1}
                       to={item.href}
-                      smooth={true}>{item.title}</S.NavLink>
+                      smooth={true}
+                      href={"#"}>
+                        {item.title}
+          </S.NavLink>
         </S.MenuItem>
       })}
     </ul>

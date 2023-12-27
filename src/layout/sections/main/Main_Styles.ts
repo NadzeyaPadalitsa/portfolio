@@ -19,8 +19,8 @@ const Photo = styled.img`
   box-shadow: 8px 8px 10px 2px ${theme.colors.accent};
 
   @media ${theme.media.mobile} {
-    width: 310px;
-    height: 380px;
+    width: 300px;
+    height: 350px;
   }
 `
 
