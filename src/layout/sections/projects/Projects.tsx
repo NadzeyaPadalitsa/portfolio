@@ -10,6 +10,8 @@ import keksImg from '../../../assets/images/project-3.png';
 import keksImg2x from '../../../assets/images/project-3@2x.png';
 import portfolioImg from '../../../assets/images/project-4.png';
 import portfolioImg2x from '../../../assets/images/project-4@2x.png';
+import nftImg from '../../../assets/images/project-5.png';
+import nftImg2x from '../../../assets/images/project-5@2x.png';
 import sedonaImgWebp from '../../../assets/images/project-1.webp';
 import sedonaImgWebp2x from '../../../assets/images/project-1@2x.webp';
 import sedonaImgAvif from '../../../assets/images/project-1.avif';
@@ -26,6 +28,10 @@ import portfolioImgWebp from '../../../assets/images/project-4.webp';
 import portfolioImgWebp2x from '../../../assets/images/project-4@2x.webp';
 import portfolioImgAvif from '../../../assets/images/project-4.avif';
 import portfolioImgAvif2x from '../../../assets/images/project-3@2x.avif';
+import nftImgWebp from '../../../assets/images/project-5.webp';
+import nftImgWebp2x from '../../../assets/images/project-5@2x.webp';
+import nftImgAvif from '../../../assets/images/project-5.avif';
+import nftImgAvif2x from '../../../assets/images/project-5@2x.avif';
 import { Container } from '../../../components/Container';
 import { S } from './Projects_Styles';
 
@@ -72,6 +78,17 @@ const projectsData = [
     text: "Tech stack : React, JavaScript, TypeScript, Styled Components",
     hrefPreview: "https://nadin3112.github.io/portfolio/",
     hrefCode: "https://github.com/Nadin3112/portfolio"
+  },
+
+  {
+    title: "The Best NFTs Digital Art",
+    src: nftImg,
+    srcSet: `${nftImg2x} 2x`,
+    srcSetWebp: `${nftImgWebp} 1x, ${nftImgWebp2x} 2x`,
+    srcSetAvif: `${nftImgAvif} 1x, ${nftImgAvif2x} 2x`,
+    text: "Tech stack : React, JavaScript, TypeScript, Styled Components",
+    hrefPreview: "https://nadin3112.github.io/project-creative-art/",
+    hrefCode: "https://github.com/Nadin3112/project-creative-art"
   }
 ]
 
