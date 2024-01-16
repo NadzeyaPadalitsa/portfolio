@@ -11,7 +11,7 @@ export const About: React.FC = () => {
         <SectionTitle>About me</SectionTitle>
         <S.AboutWrapper>
           <Description>Hi, I’m Nadia Padalitsa, 32 years old, Belarus. I am interested in web development and everything connected with it.</Description>
-          <Description>I took courses on layout at <a href="https://htmlacademy.ru/profile/id1983015/certificates">htmlacademy</a> and "Professional Layout in ReactJS" at the <a href="https://it-incubator.io/">IT-incubator</a>.</Description>
+          <Description>I have a higher education, graduated from the "Belarusian State Technological University". I took courses on layout at <a href="https://htmlacademy.ru/profile/id1983015/certificates">htmlacademy</a> and "Professional Layout in ReactJS" at the <a href="https://it-incubator.io/education/html-css-in-react">IT-incubator</a>.</Description>
           <Description>I can create adaptive cross-browser optimized layout that is compatible with modern browsers. I know how to automate my work with DevTools, Node.js, npm-skipts, Autoprefixer, Pixel Perfect, Gulp.
             Familiar with either Webpack and Vite.
             I know the BEM methodology and how to make CSS animations. My portfolio is written in ReactJS(TypeScript). I know the syntax and capabilities of Styled Components.</Description>
