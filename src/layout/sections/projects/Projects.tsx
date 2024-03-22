@@ -54,8 +54,8 @@ const projectsData = [
     srcSetWebp: `${storeImgWebp} 1x, ${storeImgWebp2x} 2x`,
     srcSetAvif: `${storeImgAvif} 1x, ${storeImgAvif2x} 2x`,
     text: "Tech stack : HTML, JavaScript, SASS, Gulp, Bem",
-    hrefPreview: "https://github.com/Nadin3112/store",
-    hrefCode: "https://github.com/Nadin3112/store"
+    hrefPreview: "https://nadin3112.github.io/classic-wood-style/",
+    hrefCode: "https://github.com/Nadin3112/classic-wood-style"
   },
 
   {
